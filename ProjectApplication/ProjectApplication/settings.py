@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'crispy_bootstrap5',
     'simple_history',
     'phonenumber_field',
     'axes',
@@ -226,7 +227,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/logged/'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 # Makes message tags compatible with Bootstrap4 alert messages
 MESSAGE_TAGS = {
